@@ -1,0 +1,75 @@
+.timer-round-display__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.timer-round-display__main-round {
+    width: 175px;
+    height: 175px;
+    background-color: #ededed;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer-round-display__round-with-text {
+    width: 155px;
+    height: 155px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-round-display__spiner-round {
+    width: 175px;
+    height: 175px;
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    animation: linear 1s infinite rotate-animation;
+}
+
+.timer-round-display__spiner-round-container {
+    width: 175px;
+    height: 175px;
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-round-display__spiner {
+    width: 10px;
+    height: 10px;
+    background-color: #ffc93d;
+    border-radius: 100%;
+    box-shadow: -4px 0px 5px #ffc93d;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.timer-round-display__time-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.timer-round-display__text-container {
+    display: flex;
+    justify-content: flex-start;
+}
